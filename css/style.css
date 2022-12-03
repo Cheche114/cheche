@@ -1,0 +1,141 @@
+body{
+    font: 16px/1.6em Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+img{
+    width: 60px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+
+header{
+    color: #666;
+    padding: 40px 0;
+    margin-bottom: 30px;
+}
+
+header  img{
+    padding-top: 80px;
+    width: 90px;
+}
+
+
+
+/*about*/
+#about-gdg #img-mag{
+    float: left;
+    width: 20px;
+    box-sizing: border-box;
+    padding-left: 120px;
+    margin-top: 80px;
+}
+
+#about-gdg .mag{
+    float: right;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+#about-gdg h3{
+    color: green;
+}
+
+/*boxes*/
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box .head_1{
+    color: dodgerblue;
+}
+
+#boxes .box .head_2{
+    color: green;
+}
+
+#boxes .box .head_3{
+    color: maroon;
+}
+
+/*link*/
+#link-id{
+    text-align: center;
+    padding: 20px;
+}
+
+#link-id a{
+    background-color: darkgreen;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#link-id img{
+    width: 55%;
+}
+
+/*more*/
+#more-info{
+    float: left;
+    width: 60%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#more-info li{
+    padding-left: 20px;
+}
+
+#group-photo{
+    float: right;
+    width: 40%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#group-photo img{
+    width: 300px;
+    padding-top: 10px;
+}
+
+@media(max-width:768px){
+    #about-gdg #img-mag{
+        margin-top: 0;
+        padding-right: 100px;
+    }
+    
+    #about-gdg #img-mag,
+    #about-gdg .mag,
+    #boxes .box,
+    #more-info,
+    #group-photo{
+       width: 100%;
+       text-align: center;
+        float: none;
+    }
+
+    #link-id img{
+        margin-top: 10px;
+    }
+}
