@@ -134,6 +134,10 @@ header  img{
        text-align: center;
         float: none;
     }
+    
+    #link-id a{
+        text-align: center;
+    }
 
     #link-id img{
         margin-top: 10px;
