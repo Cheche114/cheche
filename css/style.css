@@ -137,6 +137,11 @@ header  img{
     #about-gdg .container img{
         align-self: center;
     }
+    
+     #link-id .container{
+        display: block;
+        text-align: center;
+    }
 
     #more-info .container{
         display: block;
