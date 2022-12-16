@@ -6,8 +6,9 @@ body{
 }
 
 .container{
-    width: 80%;
-    margin: auto;
+   width: 80%;
+   margin: auto;
+   overflow: hidden;
 }
 
 img{
@@ -35,18 +36,14 @@ header  img{
 
 
 /*about*/
-#about-gdg #img-mag{
-    float: left;
-    width: 20px;
-    box-sizing: border-box;
-    padding-left: 120px;
-    margin-top: 80px;
+#about-gdg .container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-gap: 1em;
 }
 
-#about-gdg .mag{
-    float: right;
-    width: 80%;
-    box-sizing: border-box;
+#about-gdg img{
+    padding: 75px;
 }
 
 #about-gdg h3{
@@ -54,15 +51,17 @@ header  img{
 }
 
 /*boxes*/
-#boxes{
+#boxes .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
     margin-top: 20px;
 }
 
 #boxes .box{
-    float: left;
-    text-align: center;
-    width: 30%;
+    margin: 10px;
     padding: 10px;
+    text-align: center;
 }
 
 #boxes .box .head_1{
@@ -78,9 +77,10 @@ header  img{
 }
 
 /*link*/
-#link-id{
-    text-align: center;
-    padding: 20px;
+#link-id .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #link-id a{
@@ -92,54 +92,54 @@ header  img{
 }
 
 #link-id img{
-    width: 55%;
+   width: 100%;
+    
 }
 
 /*more*/
-#more-info{
-    float: left;
-    width: 60%;
-    padding: 10px;
-    box-sizing: border-box;
+#more-info .container{
+    display: flex;
+    justify-content: space-between;
+    min-height: 200px;
+}
+
+.info{
+    flex: 1;
+}
+
+ .group-photo{
+    flex: 1;
+}
+
+.group-photo img{
+    padding: 15px;
+    width: 430px;
+    height: 350px;
 }
 
 #more-info li{
     padding-left: 20px;
 }
 
-#group-photo{
-    float: right;
-    width: 40%;
-    box-sizing: border-box;
-    margin: 0;
-}
-
-#group-photo img{
-    width: 300px;
-    padding-top: 10px;
-}
-
 @media(max-width:768px){
-    #about-gdg #img-mag{
-        margin-top: 0;
-        padding-right: 100px;
+    #boxes .container{
+        display: block;
+        padding: 10px;
     }
     
-    #about-gdg #img-mag,
-    #about-gdg .mag,
-    #boxes .box,
-    #more-info,
-    #group-photo{
-       width: 100%;
-       text-align: center;
-        float: none;
-    }
-    
-    #link-id a{
+    #about-gdg .container{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
         text-align: center;
     }
 
-    #link-id img{
-        margin-top: 10px;
+    #about-gdg .container img{
+        align-self: center;
+    }
+
+    #more-info .container{
+        display: block;
+        padding: 10px;
     }
 }
